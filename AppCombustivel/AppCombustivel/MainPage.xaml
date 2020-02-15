@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppCombustivel.MainPage">
+
+    <StackLayout Padding="10" BackgroundColor="White">
+        
+        <Label Text="Valor Etanol" FontSize="Large" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txt_etanol" />
+
+        <Label Text="Valor Gasolina" FontSize="Large" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="txt_gasolina" />
+
+        <Button Text="Calcular" Clicked="Calcular_Preco" BackgroundColor="Black" TextColor="White"/>
+        <Entry x:Name="txt_resultado" />
+        
+    </StackLayout>
+
+</ContentPage>
